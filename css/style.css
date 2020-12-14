@@ -1,0 +1,130 @@
+body{
+	/*font-family: 'PixelMplus10-Regular';*/
+    height:100vh;
+    width:100vw;
+    /*background-color: #f19601;*/
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-size:cover;
+    background-image: 
+    url(../image/haikei.png);
+    background-position: center;
+}
+@font-face{
+	font-family: 'yasashisa';
+	src:url(../font/07やさしさゴシック.ttf);
+}
+.titleText{
+	position:absolute;
+	font-family: yasashisa;
+	font-size: 2vh;
+	top:5px;
+	color:#ffd353;
+	opacity: 0.8;
+}
+.checkBoard{
+	width:96vw;
+}
+.cbRow{
+	height:16%;
+}
+.blank{
+	width:19%;
+}
+.cardData{
+	width:19%;
+	text-align: center;
+	vertical-align: middle;
+}
+.cardImg{
+	width:95%;
+	height:auto;
+	border-radius: 5px;
+}
+.space{
+	width:3%;
+}
+
+
+
+
+.add_dark{
+	filter:brightness(25%) 
+	grayscale(100%); 
+}
+
+
+/*.round{
+    border-radius: 20px;
+}
+
+.title{
+	position: fixed;
+	top: 120px;
+	width:100vw;
+	text-align: center;
+	font-size: 70px;
+	color: white;
+}
+.sub{
+	position: fixed;
+	top: 70px;
+	width:100vw;
+	text-align: center;
+	font-size: 30px;
+	color: gray;
+}
+.howtoButton{
+	position: fixed;
+	bottom:110px;
+	margin:0 5vw 0 80vw;
+	font-size: 50px;
+	width:15vw;
+}
+.howtoButton:hover{
+	opacity: 0.7;
+}
+.caption{
+	width:100vw;
+	height:100vh;
+	position: fixed;
+	z-index: 100;
+	top:0;
+	background-color: #ebd45d44;
+	display: none;
+}
+.slider{
+	position: fixed;
+	top:150px;
+	opacity: 1.0;
+	width:80vw;
+	margin:auto;
+	display: none;
+}
+.slider img{
+	width:80vw;
+}
+.batu{
+	position: fixed;
+    top: 120px;
+    opacity: 0.8;
+    width: 65px;
+    right: 6vw;
+    z-index: 200;
+    display: none;
+}
+header{
+	width:100vw;
+	height:50px;
+	position: fixed;
+	top:0;
+	background-color: #4888b1;
+}
+footer{
+	width:100vw;
+	height:50px;
+	position: fixed;
+	background-color: #4888b1;
+	bottom:0;
+}*/
