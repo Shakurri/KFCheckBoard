@@ -63,11 +63,11 @@ $(function(){
   	if($(this).hasClass('add_dark')){
       $(this).removeClass('add_dark');
       remNum++;
-      remain.innerHTML=remNum;
+      remain.textContent=remNum;
     }else{
       $(this).addClass('add_dark');
       remNum--;
-      remain.innerHTML=remNum;
+      remain.textContent=remNum;
     }
   });
 
