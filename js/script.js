@@ -1,5 +1,3 @@
-var isCheck=true;
-
 var old_x = 0;
 var old_y = 0;
 var x;
@@ -9,11 +7,15 @@ var selectColor = "#ff0000";
 var selectSize = 3;
 var selectEmoji = '';
 
+var remNum=23;
+
 
 var canvas = document.getElementById("can");
 var ctx = canvas.getContext('2d');
 ctx.lineWidth=4;
 ctx.strokeStyle="#e01454";
+
+var remain =document.getElementById("remainNum");
 
 window.onload = function() {
     canvas.width=window.innerWidth;
@@ -60,8 +62,12 @@ $(function(){
   $('.cardImg').on('click',function () {
   	if($(this).hasClass('add_dark')){
       $(this).removeClass('add_dark');
+      remNum++;
+      remain.innerHTML=remNum;
     }else{
       $(this).addClass('add_dark');
+      remNum--;
+      remain.innerHTML=remNum;
     }
   });
 
