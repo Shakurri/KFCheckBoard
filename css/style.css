@@ -15,6 +15,49 @@ body{
 	font-family: 'yasashisa';
 	src:url(../font/07やさしさゴシック.ttf);
 }
+
+
+.sizeError{
+	position: absolute;
+	top:0;
+	left:0;
+	width:100vw;
+	height:100vh;
+	background-size:cover;
+    background-image: 
+    url(../image/haikei.png);
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 100;
+}
+
+@media screen and (max-width: 540px){
+	.sizeError{
+		display: none;
+	}
+}
+@media screen and (min-width: 540px){
+	.checkBoard{
+		display: none;
+	}
+	.toolBox{
+		display: none;
+	}
+}
+
+
+.errorText{
+	font-family: yasashisa;
+	font-size: 6vw;
+	color:#ffffff;
+}
+
+
+
+
 .titleText{
 	position:absolute;
 	font-family: yasashisa;
@@ -32,7 +75,7 @@ body{
 }
 #remainNum{
 	font-family: yasashisa;
-	font-size: 4.5vh;
+	font-size: 3.5vh;
 	color:#fff;
 }
 
