@@ -108,7 +108,7 @@ $(function(){
 
   });
   $('.red').on('click',function () {
-    selectColor="#ff0000";
+    selectColor="#ff3700";
     if(!$(this).hasClass('add_col_choice')){
       $(this).addClass('add_col_choice');
     }
@@ -119,7 +119,7 @@ $(function(){
     $('.white').removeClass('add_col_choice');
   });
   $('.green').on('click',function () {
-    selectColor="#008000";
+    selectColor="#66ff00";
     if(!$(this).hasClass('add_col_choice')){
       $(this).addClass('add_col_choice');
     }
@@ -130,7 +130,7 @@ $(function(){
     $('.white').removeClass('add_col_choice');
   });
   $('.black').on('click',function () {
-    selectColor="#000000";
+    selectColor="#062806";
     if(!$(this).hasClass('add_col_choice')){
       $(this).addClass('add_col_choice');
     }
@@ -141,7 +141,7 @@ $(function(){
     $('.white').removeClass('add_col_choice');
   });
   $('.blue').on('click',function () {
-    selectColor="#0000ff";
+    selectColor="#007bff";
     if(!$(this).hasClass('add_col_choice')){
       $(this).addClass('add_col_choice');
     }
@@ -152,7 +152,7 @@ $(function(){
     $('.white').removeClass('add_col_choice');
   });
   $('.yellow').on('click',function () {
-    selectColor="#ffff00";
+    selectColor="#edcd00";
     if(!$(this).hasClass('add_col_choice')){
       $(this).addClass('add_col_choice');
     }
@@ -163,7 +163,7 @@ $(function(){
     $('.white').removeClass('add_col_choice');
   });
   $('.white').on('click',function () {
-    selectColor="#ffffff";
+    selectColor="#be00f2";
     if(!$(this).hasClass('add_col_choice')){
       $(this).addClass('add_col_choice');
     }

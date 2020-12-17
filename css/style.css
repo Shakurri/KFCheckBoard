@@ -48,6 +48,17 @@ body{
 	}
 }
 
+@media screen and (min-height: 600px){
+	.titleText{
+		display: none;
+	}
+}
+@media screen and (max-height: 600px){
+	.logo{
+		display: none;
+	}
+}
+
 
 .errorText{
 	font-family: yasashisa;
@@ -57,7 +68,11 @@ body{
 
 
 
-
+.logo{
+	position: absolute;
+    top: 1vh;
+    width: 14vh;
+}
 .titleText{
 	position:absolute;
 	font-family: yasashisa;
@@ -69,13 +84,13 @@ body{
 
 .remainText{
 	font-family: yasashisa;
-	font-size: 2vh;
+	font-size: 4vw;
 	color:#ffd353;
 	opacity: 0.8;
 }
 #remainNum{
 	font-family: yasashisa;
-	font-size: 3.5vh;
+	font-size: 8vw;
 	color:#fff;
 }
 
@@ -224,22 +239,22 @@ body{
 	margin-bottom:6%;
 }
 .red{
-	background-color: red;
+	background-color: #ff3700;
 }
 .green{
-	background-color: green;
+	background-color: #66ff00;
 }
 .black{
-	background-color: black;
+	background-color: #062806;
 }
 .blue{
-	background-color: blue;
+	background-color: #007bff;
 }
 .yellow{
-	background-color: yellow;
+	background-color: #edcd00;
 }
 .white{
-	background-color: white;
+	background-color: #be00f2;
 }
 
 
@@ -270,77 +285,3 @@ body{
 	display: none;
 }
 
-
-/*.round{
-    border-radius: 20px;
-}
-
-.title{
-	position: fixed;
-	top: 120px;
-	width:100vw;
-	text-align: center;
-	font-size: 70px;
-	color: white;
-}
-.sub{
-	position: fixed;
-	top: 70px;
-	width:100vw;
-	text-align: center;
-	font-size: 30px;
-	color: gray;
-}
-.howtoButton{
-	position: fixed;
-	bottom:110px;
-	margin:0 5vw 0 80vw;
-	font-size: 50px;
-	width:15vw;
-}
-.howtoButton:hover{
-	opacity: 0.7;
-}
-.caption{
-	width:100vw;
-	height:100vh;
-	position: fixed;
-	z-index: 100;
-	top:0;
-	background-color: #ebd45d44;
-	display: none;
-}
-.slider{
-	position: fixed;
-	top:150px;
-	opacity: 1.0;
-	width:80vw;
-	margin:auto;
-	display: none;
-}
-.slider img{
-	width:80vw;
-}
-.batu{
-	position: fixed;
-    top: 120px;
-    opacity: 0.8;
-    width: 65px;
-    right: 6vw;
-    z-index: 200;
-    display: none;
-}
-header{
-	width:100vw;
-	height:50px;
-	position: fixed;
-	top:0;
-	background-color: #4888b1;
-}
-footer{
-	width:100vw;
-	height:50px;
-	position: fixed;
-	background-color: #4888b1;
-	bottom:0;
-}*/
