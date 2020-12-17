@@ -133,7 +133,9 @@ body{
 	bottom:0;
 	right:0;
 	background-color:#f19601;
-	border-radius: 10px 0 0 0;
+	border-radius: 10px 0 0 10px;
+
+	box-shadow: 0px -2px 2px #4e4e4e inset;
 }
 
 .checkBut{
