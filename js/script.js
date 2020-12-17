@@ -104,7 +104,7 @@ $(function(){
       $('.penBut').removeClass('add_but_choice');
 
       globalCompositeOperation='destination-out';
-      selectSize=20;
+      selectSize=30;
 
   });
   $('.red').on('click',function () {
