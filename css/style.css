@@ -11,7 +11,7 @@ body{
     url(../image/haikei.png);
     background-position: center;
 
-    overflow: hidden;
+    overscroll-behavior-y: none;
 }
 @font-face{
 	font-family: 'yasashisa';
