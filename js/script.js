@@ -58,7 +58,7 @@ function drawLine(x1, y1, x2, y2) {
 
 $(function(){
   var cardNum=22;
-  
+
   $('.cardImg').on('click',function () {
   	if($(this).hasClass('add_dark')){
       $(this).removeClass('add_dark');
@@ -82,7 +82,7 @@ $(function(){
       }
       $('.penBut').removeClass('add_but_choice');
       $('.eraBut').removeClass('add_but_choice');
-    
+
   });
   $('.penBut').on('click',function () {
       $('#can').removeClass('add_can_hide');
@@ -90,9 +90,9 @@ $(function(){
         $(this).addClass('add_but_choice');
       }
       $('.checkBut').removeClass('add_but_choice');
-      $('.eraBut').removeClass('add_but_choice'); 
+      $('.eraBut').removeClass('add_but_choice');
 
-      globalCompositeOperation='source-over'; 
+      globalCompositeOperation='source-over';
       selectSize=3;
   });
   $('.eraBut').on('click',function () {
@@ -204,3 +204,20 @@ $target.on('touchmove', function(e){
     }
     prevY = currentY;
 });
+
+function disableScroll(event) {
+  event.preventDefault();
+}
+
+// スクロール禁止
+function noScroll() {
+  // イベントと関数を紐付け
+  document.addEventListener('touchmove', disableScroll, { passive: false });
+  document.addEventListener('mousewheel', disableScroll, { passive: false });
+}
+
+function returnScroll() {
+  // イベントと関数を紐付け
+  document.removeEventListener('touchmove', disableScroll, { passive: false });
+  document.removeEventListener('mousewheel', disableScroll, { passive: false });
+}
